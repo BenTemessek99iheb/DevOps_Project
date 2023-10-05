@@ -7,12 +7,13 @@ import tn.esprit.devops_project.entities.Stock;
 import tn.esprit.devops_project.repositories.StockRepository;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 @SpringBootTest
 class StockServiceImplTest {
-  @Autowired
+    @Autowired
     StockRepository stockRepository;
     //etaps : 1/create a pachage under main with the same name of the artifact in our case tn.esprit.devops_project
-    //2/ go to the service u wanna test , select the name of service and click ctrl+shift+t , it will ask u what methods u wanna test , select the method
+    // 2/ go to the service u wanna test , select the name of service and click ctrl+shift+t , it will ask u what methods u wanna test , select the method
 
     @Test
     void addStock() {
@@ -27,5 +28,13 @@ class StockServiceImplTest {
         assertNotNull(savedStock);
         assertNotNull(savedStock.getIdStock());
         assertEquals("Test Stock", savedStock.getTitle());
+    }
+
+    @Test
+    void retrieveStock() {
+    }
+
+    @Test
+    void retrieveAllStock() {
     }
 }

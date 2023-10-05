@@ -10,4 +10,20 @@ class ActivitySectorImplTest {
     @Test
     void addActivitySector() {
     }
+
+    @Test
+    void retrieveAllActivitySectors() {
+    }
+
+    @Test
+    void deleteActivitySector() {
+    }
+
+    @Test
+    void updateActivitySector() {
+    }
+
+    @Test
+    void retrieveActivitySector() {
+    }
 }
